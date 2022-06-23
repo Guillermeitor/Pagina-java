@@ -1,0 +1,200 @@
+/***************************Pagina web creado por Guillermo De Martin Diaz*/
+/***************************2021 mi primera pagina web */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* con esto controlo todo el contenido de mi pagina web */
+body {
+    background-color:black; /* aqui mongo un dondo entero para toda la web*/
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5361FF;
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.brand-title a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbar-links {
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: cornflowerblue;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.20rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* responsive segun los pixeles de tu telefono*/
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Botton hamburguesa si se pasa de 600px */
+    .toggle-button {
+        display: flex;
+    }
+
+    /* Tamaño de los links */
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+/* Funcion responsive para las imagenes sacada de W3schools*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: table-cell;
+    margin:auto;
+    padding: 30px;
+    
+}
+#full-screen-video-container {
+    position:relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* responsive video*/
+#full-screen-video-container video {
+    z-index: -1;
+    position: absolute;
+    width: 100;
+    height: 100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#full-screen-video-content {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgba(240, 240, 240, 0.938);
+    padding: 10%;
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+
+    
+}
+
+#java  { font-family: 'Source Code Pro', monospace; text-align: center;
+        padding: 4%; background-color: rgb(240, 52, 52); width: auto;}
+
+#sobremi { font-family: 'Source Code Pro', monospace; text-align: center;}
+
+#iconos { padding: 10px;text-align: center;color: rgb(255, 255, 255);}
+
+
+  
+  /**** Para que sea responsive en los telefonos Galaxy Fold*/
+  @media screen and (max-width: 306px) {
+    .galery {
+        width: 100%;
+        height: auto;
+    }
+    #full-screen-video-content{
+        width: 300%;
+        height:100%;
+        font-size: 2rem;
+        padding: 40%; 
+    }
+
+    .brand-title {
+        font-size: 100%;
+    }
+
+    .toggle-button {
+        width: 10%;
+        top: 20%;
+    }
+    
+  }
+
+  /* Al poner un link se nos cambia de color con esta opcion nos aseguramos de que ya no cambie*/
+.fa-windows {color: black;}
+.fa-wordpress {color: black ;background: url(../notas-wordpress/index.html);}
+.fa-calculator {color: black;}
+.fa-superscript {color: black;}
+.fa-caret-up { color: black;}
+.fa-circle {color: black;}
+#sobre-nosotros {text-align: center;}
+#foother {background-color: rgba(0, 0, 0, 0.568); padding: 10px; text-align: center;background-color: black;color: white; ;}

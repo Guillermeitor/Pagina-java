@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triángulos</title>
+    <link rel="stylesheet" href="../estilos/style-wordpress.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="../imagenes/png-clipart-triangle-triangle-angle-triangle.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="../imagenes/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Triángulos</h3>
+          <p class="text">
+            Este programa nos dirá si el triángulo es equilátero, isósceles o escaleno
+          </p>
+
+          
+
+          <div class="social-media">
+            <p>Pulse en uno de los iconos para acceder</p>
+            <div class="social-icons">
+              <a href="../index.html">
+                <i class="fa fa-home"  aria-hidden="true"></i>
+
+
+              </a>
+              <a href="../calculadora/index.html">
+                <i class="fa fa-calculator"></i>
+              </a>
+
+              <a href="../notas-wordpress/index.html">
+                <i class="fa fa-wordpress"></i>
+              </a>
+
+              <a href="../divisor/index.html">
+                <i class="fa fa-superscript"></i>
+              </a>
+
+              <a href="../Circulos/index.html">
+                <i class=" fa fa-circle"></i>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">¿Eres capaz de sacar los 3 tipos de triángulos? Especifícalos en centímetros</h3>
+            <div class="input-container">
+              <input  class="input" id="lado1" type="number" />
+              <label for="divi">Lado 1</label>
+              <span>lado 1</span>
+            </div>
+            <div class="input-container">
+              <input  class="input" id="lado2" type="number" />
+              <label for="disor">Lado 2</label>
+              <span>Lado 2</span>
+            </div>
+
+            <div class="input-container">
+              <input  class="input" id="lado3" type="number" />
+              <label for="disor">Lado 3</label>
+              <span>Lado 3</span>
+            </div>
+          </form>
+           
+
+            <button onclick="triangulos()" class="btn" id="boton-centrado" type="number">Calcula</button>
+
+            <p id="solucion"></p>
+
+           
+          
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Java-scripth/java-de-worpress.js"></script>
+    <script src="../Java-scripth/triangulo.js"></script>
+  </body>
+</html>
